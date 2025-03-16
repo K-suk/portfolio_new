@@ -34,7 +34,7 @@ const projects = [
         title: "Asian Coffee",
         image: "/image/AsianCoffee/Asian1.jpg",
         description: "私が高校生の頃にコロナ下で学校の売店が閉じてしまったことをきっかけに、ミニ売店のような形でコーヒーを作って販売してました。私のコーヒーをオンラインで購入できるようにしたサイトです。",
-        github: "https://github.com/asian-coffee",
+        github: "https://github.com/K-suk/asian_coffee",
         techStack: "Python, Django",
     },
     {
@@ -104,11 +104,9 @@ export default function Projects() {
                                                 {project.github && (
                                                     <Button
                                                         as={Link}
-                                                        href={project.github}
                                                         colorScheme="gray"
-                                                        isExternal
                                                     >
-                                                        GitHub
+                                                        <Link href={project.github} target="_blank" color={"white"}>GitHub</Link>
                                                     </Button>
                                                 )}
                                             </HStack>
